@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="rubenscorrea.com.app05_agendacontatos.Formulario"
+    tools:showIn="@layout/activity_formulario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/siteFormulario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/emailFormulario"
+                    android:layout_alignStart="@+id/emailFormulario"
+                    android:layout_below="@+id/emailFormulario"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Site"
+                    android:inputType="textPersonName" />
+
+                <ImageView
+                    android:id="@+id/imagemFormulario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/foto"
+                    app:srcCompat="@drawable/foto" />
+
+                <EditText
+                    android:id="@+id/enderecoFormulario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/telefoneFormulario"
+                    android:layout_alignStart="@+id/telefoneFormulario"
+                    android:layout_below="@+id/telefoneFormulario"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:hint="Endereço"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/nomeFormulario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imagemFormulario"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:hint="Nome"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/telefoneFormulario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/siteFormulario"
+                    android:layout_alignStart="@+id/siteFormulario"
+                    android:layout_below="@+id/siteFormulario"
+                    android:layout_marginTop="14dp"
+                    android:ems="10"
+                    android:hint="Telefone"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/emailFormulario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/nomeFormulario"
+                    android:layout_alignRight="@+id/nomeFormulario"
+                    android:layout_below="@+id/nomeFormulario"
+                    android:layout_marginTop="11dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+                <Button
+                    android:id="@+id/botaoFormulario"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_above="@+id/nomeFormulario"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/layout_botao_foto" />
+            </RelativeLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>
